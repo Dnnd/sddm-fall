@@ -35,7 +35,7 @@ Item {
     property var selectedSession: selectSession.currentIndex
     property string textConstantSession
     property int loginButtonWidth
-    property Control exposeSession: selectSession
+    property ComboBox exposeSession: selectSession
 
     ComboBox {
         id: selectSession
@@ -78,7 +78,7 @@ Item {
             }
 
             background: Rectangle {
-                color: "transparent" 
+                color: root.palette.window 
             }
         }
 
